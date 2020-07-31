@@ -7,9 +7,6 @@ RUN apk add wget unzip
 WORKDIR /opt/openvidu-call
 
 # Install openvidu-call
-RUN wget "https://github.com/OpenVidu/openvidu-call/releases/download/v${RELEASE_VERSION}/openvidu-call-${RELEASE_VERSION}.tar.gz" -O openvidu-call.tar.gz && \
-    tar zxf openvidu-call.tar.gz  && \
-    rm openvidu-call.tar.gz
 
 # Entrypoint
 COPY ./entrypoint.sh /usr/local/bin

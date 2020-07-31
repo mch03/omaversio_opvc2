@@ -1,15 +1,15 @@
 .section1 {
-  background: url('./../../assets/images/bg.jpg')  top center no-repeat;
+  background: url('./../../assets/images/bg.jpg') top center no-repeat;
   background-size: cover;
   height: 100%;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: #696969;
 }
 
 #header, .footer {
   background-color: transparent;
-  color: #ffffff;
+  color: #808080;
 }
 
 .roomError{
@@ -19,25 +19,27 @@
 .footer {
   position: absolute;
   bottom: 0;
-  font-size: 9px;
+  font-size: 10px;
   height: auto;
 }
 
-.footer a {
-  color: #ffffff;
-
-}
+  .footer a {
+    color: #808080;
+    text-decoration:none;
+  }
 #header_img {
   max-width: 200px;
   margin-right: 10px;
-  margin-top: 10px;
+  margin-left:5px;
+  margin-top: 15px;
 }
 
 .ovVersion {
   position: absolute;
   right: 15px;
-  font-size: 16px;
+  font-size: 9px;
   font-weight: bold;
+  color: white;
 }
 
 .ovLogo {
@@ -51,7 +53,7 @@
 h4 {
   font-size: 25px;
   font-weight: 500;
-  color: #fff;
+  color: #696969;
   position: relative;
   padding-bottom: 5px;
 }
@@ -130,7 +132,7 @@ h4 {
   background: none;
   font-size: 16px;
   font-weight: bold;
-  padding: 0 20px;
+  padding: 0 25px;
   background: #00ad4e;
   color: #fff;
   border-radius: 0px 5px 10px 0px;
@@ -141,6 +143,7 @@ h4 {
 
 .joinButton:hover {
   background: #009242;
+  color:lightskyblue;
 }
 
 

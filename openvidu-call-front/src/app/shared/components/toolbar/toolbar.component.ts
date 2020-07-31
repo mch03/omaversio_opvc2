@@ -34,7 +34,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 	private chatServiceSubscription: Subscription;
 
 	fullscreenIcon = VideoFullscreenIcon.BIG;
-	logoUrl = 'https://raw.githubusercontent.com/OpenVidu/openvidu-call/master/openvidu-call-front/src/assets/images/';
+	logoUrl = 'https://hybridmedia.fi/materiaalia/';
 
 	participantsNames: string[] = [];
 

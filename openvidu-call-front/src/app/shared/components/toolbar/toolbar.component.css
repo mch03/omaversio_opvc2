@@ -1,7 +1,7 @@
 #header {
   color: #ffffff;
   height: 40px;
-  background-color: #333333;
+  background-color: #4682B4;
   padding: 0 14px 0 0;
   position: absolute;
   top: 0;
@@ -41,7 +41,7 @@
 
 .titleContent {
   font-family: 'Ubuntu', sans-serif;
-  max-width: 100px;
+  max-width: 180px;
   margin: 5px -18px;
   padding: 0px 15px;
   font-size: 16px;
@@ -50,7 +50,7 @@
 }
 
 .titleContentDark {
-  background-color: #494949;
+  background-color: #4682B4;
   color: #ffffff;
 }
 
@@ -66,8 +66,8 @@
 }
 
 #point {
-  width: 10px;
-  height: 10px;
+  width: 13px;
+  height: 13px;
   position: absolute;
   top: 12px;
   right: 33px;

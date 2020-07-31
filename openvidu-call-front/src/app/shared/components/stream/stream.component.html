@@ -7,11 +7,11 @@
 	<div class="nickname" [class.fullscreen]="isFullscreen">
 		<div (click)="toggleNicknameForm()" class="nicknameContainer" selected *ngIf="!toggleNickname">
 			<span id="nickname">{{ this._user.nickname }}</span>
-			<span *ngIf="_user.local || (_user.streamManager && !_user.streamManager?.remote)"> (edit)</span>
+			<span *ngIf="_user.local || (_user.streamManager && !_user.streamManager?.remote)"> (vaihda)</span>
 		</div>
 		<div *ngIf="toggleNickname && !this._user.streamManager?.remote" [class.fullscreen]="isFullscreen" id="dialogNickname">
 			<button mat-icon-button (click)="toggleNicknameForm()" id="closeButton">
-				<mat-icon matTooltip="Close">highlight_off</mat-icon>
+				<mat-icon matTooltip="Sulje">highlight_off</mat-icon>
 			</button>
 			<form id="nicknameForm">
 				<mat-form-field color="primary">
@@ -50,8 +50,8 @@
 			<mat-icon>{{ this.fullscreenIcon }}</mat-icon>
 		</button>
 		<button mat-icon-button id="volumeButton" *ngIf="this._user.streamManager?.remote" (click)="toggleSound()">
-			<mat-icon *ngIf="!mutedSound" matTooltip="Mute sound">volume_up</mat-icon>
-			<mat-icon *ngIf="mutedSound" color="warn" matTooltip="Unmute sound">volume_off</mat-icon>
+			<mat-icon *ngIf="!mutedSound" matTooltip="Äänet pois päältä">volume_up</mat-icon>
+			<mat-icon *ngIf="mutedSound" color="warn" matTooltip="Äänet päälle">volume_off</mat-icon>
 		</button>
 		<button
 			mat-icon-button
@@ -59,7 +59,7 @@
 			id="changeScreenButton"
 			*ngIf="!this._user.streamManager?.remote && this._user.isScreen()"
 		>
-			<mat-icon matTooltip="Choose screen">picture_in_picture</mat-icon>
+			<mat-icon matTooltip="Valitse kuvalähde">picture_in_picture</mat-icon>
 		</button>
 	</div>
 </div>

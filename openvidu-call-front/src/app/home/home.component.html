@@ -4,25 +4,25 @@
 			<img id="header_img" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />
 		</a>
 		<div class="ovVersion">
-			<span>{{ version }}</span>
+			<span>Versio 0.9</span>
 		</div>
 	</mat-toolbar>
 	<div class="container">
 		<div class="ovInfo">
 			<img class="ovLogo" alt="OpenVidu Logo" src="assets/images/openvidu_vert_white_bg_trans_cropped.png" />
-			<h4>Videoconference rooms in one click</h4>
+			<h4>Virtuaalitapaaminen</h4>
 		</div>
 		<div class="formContainer">
 			<div class="roomError" id="requiredNameError" *ngIf="roomForm.hasError('required')">
-				Room name is <strong>required</strong>
+				Kirjoita kokoustilan nimi, kiitos.
 			</div>
 			<div class="roomError" id="shortNameError" *ngIf="roomForm.hasError('minlength')">
-				Room name is <strong>too short!</strong>
+				Kokoustilan nimi on liian lyhyt.
 			</div>
 			<form [formGroup]="roomForm" novalidate (ngSubmit)="goToVideoCall()">
 				<div class="joinForm">
 					<input matInput class="inputForm" type="text" [formControl]="roomForm"  autocomplete="off" id="roomInput" />
-					<button type="submit" class="joinButton" id="joinButton" >JOIN</button>
+					<button type="submit" class="joinButton" id="joinButton" >Liity</button>
 				</div>
 			</form>
 		</div>
@@ -31,21 +31,15 @@
 
 	<mat-toolbar class="footer">
 		<span>
-			Photo by
+			Verkkopalvelun toteutus 
 			<a
 				rel="noopener noreferrer"
 				target="_blank"
-				href="https://unsplash.com/@danielleone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+				href="https://hybridmedia.fi/"
 			>
-				Daniel Leone
+				Hybrid Media Oy
 			</a>
-			on
-			<a
-				href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-				target="_blank"
-			>
-				Unsplash
-			</a></span
+			</span
 		>
 	</mat-toolbar>
 </div>
